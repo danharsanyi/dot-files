@@ -1,0 +1,29 @@
+{
+  "workbench.colorTheme": "Tron (rainglow)",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+      "button.background": "#1FA7C9"
+  },
+  "editor.tabSize": 2,
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "colorize.languages": [
+      "css",
+      "sass",
+      "scss",
+      "less",
+      "postcss",
+      "sss",
+      "stylus",
+      "xml",
+      "svg",
+      "typescript"
+  ],
+  "ruby.specCommand": "RAILS_ENV=test BRAND=ferocia SKIP_COVERAGE=true DEFAULT_DRIVER=chrome CAPYBARA_TIMEOUT=7 bin/rspec --no-profile",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.minimap.enabled": false
+}
