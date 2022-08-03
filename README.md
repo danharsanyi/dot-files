@@ -1,6 +1,6 @@
 # dot-files
 
-Collection of my dot/config files
+This is a collection of my dot/config files to make it easier to set up new machines.
 
 ## VS Code
 
