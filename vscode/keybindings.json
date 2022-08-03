@@ -1,8 +1,3 @@
-// Users > danharsanyi > Library > Application Support > Code > User > keybindings.json
-
-// Code > Preferences > Keyboard Shortcuts  > Open Keyboard Shortcuts (JSON)
-
-// Place your key bindings in this file to override the defaults
 [
   {
       "key": "cmd+shift+v",

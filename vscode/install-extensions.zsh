@@ -3,21 +3,20 @@
 # Visual Studio Code :: Package list
 pkglist=(
   bradlc.vscode-tailwindcss
-  bung87.rails
-  bung87.vscode-gemfile
-  castwide.solargraph
+  chakrounanas.turbo-console-log
+  DavidAnson.vscode-markdownlint
   daylerees.rainglow
   dbaeumer.vscode-eslint
   eamodio.gitlens
   esbenp.prettier-vscode
+  GraphQL.vscode-graphql
+  GraphQL.vscode-graphql-syntax
   kamikillerto.vscode-colorize
-  mathiasfrohlich.Kotlin
-  noku.rails-run-spec-vscode
-  rebornix.ruby
-  sianglim.slim
+  ms-azuretools.vscode-docker
+  streetsidesoftware.code-spell-checker
   VisualStudioExptTeam.vscodeintellicode
   vscode-icons-team.vscode-icons
-  wingrunr21.vscode-ruby
+  xabikos.JavaScriptSnippets
 )
 
 for i in ${pkglist[@]}; do
