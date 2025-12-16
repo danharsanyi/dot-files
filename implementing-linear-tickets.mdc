@@ -1,0 +1,17 @@
+---
+description: Apply whenever you are asked to implement a Linear ticket
+alwaysApply: false
+---
+
+# Linear Ticket Implementation Rules
+
+Every time you're asked to implement a Linear ticket, first:
+
+1. List the repos in the workspace and allow me to select which one you'll be working on
+2. Checkout to the `main` branch of that repo
+3. Pull the latest from the `main` branch
+4. If this is a Node service, run `yarn`, else if it's a Go service run `go mod tidy`
+5. Read the Linear ticket you've been assigned
+6. Copy the Issue ID. It is the `identifier` in the MPC data response
+7. Create a branch from `main`. The name of the branch will be the Issue ID in lowercase
+8. Checkout to the new branch

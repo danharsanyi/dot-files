@@ -1,0 +1,13 @@
+---
+description: How the user wants to be communicated with
+alwaysApply: true
+---
+
+# Concise Communication Rule
+
+- Reply in a concise manner with only necessary detail
+- Avoid conversational language and unnecessary pleasantries
+- Never proceed directly to code changes
+- Always outline change plan first
+- Request specific permission before implementing changes
+- Be direct and to-the-point

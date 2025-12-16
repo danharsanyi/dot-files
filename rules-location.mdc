@@ -1,0 +1,45 @@
+---
+alwaysApply: true
+---
+
+# Cursor Rules Location
+
+Standards for organizing Cursor rule files in the repository.
+
+## Rule: cursor_rules_location
+
+**Description**: All Cursor rule files must be placed in the `.cursor/rules` directory
+
+**Requirements**:
+
+1. Location: Rule files must be placed in `WORKSPACE_ROOT/.cursor/rules/`
+2. Extension: Must use `.mdc` file extension
+3. Naming: Use kebab-case for filenames (e.g., `my-rule-name.mdc`)
+4. Structure: Make names descriptive of the rule's purpose
+
+**Directory Structure**:
+
+```markdown
+WORKSPACE_ROOT/
+├── gql-practitioner/
+├── gql-admin/
+├── protobufs/
+├── svc-core-example/
+├── svc.core.example/
+├── .cursor/
+│   └── rules/
+│       ├── your-rule-name.mdc
+│       ├── another-rule.mdc
+│       └── ...
+└── ...
+```
+
+**Examples**:
+
+- ✅ Correct: `.cursor/rules/my-rule.mdc`
+- ✅ Correct: `.cursor/rules/linear-ticket-implementation.mdc`
+- ❌ Incorrect: `rules/my-rule.mdc`
+- ❌ Incorrect: `my-rule.mdc`
+- ❌ Incorrect: `.rules/my-rule.mdc`
+
+**Note**: This rule file itself follows these standards by being located in `.cursor/rules/rules-location.mdc`
