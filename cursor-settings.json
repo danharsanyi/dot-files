@@ -1,0 +1,59 @@
+{
+    "[graphql]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[proto]": {
+        "editor.defaultFormatter": "bufbuild.vscode-buf"
+    },
+    "[typescript][typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.userWords": [
+        "Chakra",
+        "eucalyptusvc",
+        "Helpscout",
+        "Mutationrequest",
+        "subcomponents",
+        "svgs"
+    ],
+    "cursor.general.enableShadowWorkspace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSave": {},
+    "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "git.allowForcePush": true,
+    "git.allowNoVerifyCommit": true,
+    "git.autofetch": true,
+    "git.autorefresh": true,
+    "git.autoRepositoryDetection": true,
+    "git.confirmForcePush": false,
+    "git.confirmNoVerifyCommit": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.fetchOnPull": true,
+    "git.ignoreRebaseWarning": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "turboConsoleLog.delimiterInsideMessage": "",
+    "turboConsoleLog.logMessagePrefix": "🪵",
+    "turboConsoleLog.logMessageSuffix": "",
+    "turboConsoleLog.quote": "'",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.tsserver.maxTsServerMemory": 6144,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Winter is Coming (Dark Blue - No Italics)",
+    "workbench.iconTheme": "vscode-icons",
+    "biome.suggestInstallingGlobally": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "go.toolsManagement.autoUpdate": true,
+}
