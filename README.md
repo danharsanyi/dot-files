@@ -4,7 +4,7 @@ This is a collection of my dot/config files to make it easier to set up new mach
 
 ## VS Code
 
-###### Keybindings
+### Keybindings
 
 Source file location: Users > username > Library > Application Support > Code > User > keybindings.json
 
