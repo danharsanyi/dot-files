@@ -1,0 +1,169 @@
+config-version = 2
+
+# Start AeroSpace at login
+start-at-login = true
+
+# Normalizations
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# Accordion padding (visible peek of hidden windows in accordion mode)
+accordion-padding = 30
+
+# Default layout and orientation
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+# Mouse follows focus when switching monitors
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+# Auto-unhide windows hidden with cmd-h (prevents windows vanishing from tiling tree)
+automatically-unhide-macos-hidden-apps = true
+
+# Active workspaces
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+# Monitor assignment (left to right)
+# Left monitor = workspaces 1-5
+# Right monitor = workspaces 6-9
+[workspace-to-monitor-force-assignment]
+    1 = 1
+    2 = 1
+    3 = 1
+    4 = 1
+    5 = 1
+    6 = 2
+    7 = 2
+    8 = 2
+    9 = 2
+
+on-mode-changed = []
+
+[key-mapping]
+    preset = 'qwerty'
+
+# Gaps between windows and screen edges
+[gaps]
+    inner.horizontal = 0
+    inner.vertical =   0
+    outer.left =       0
+    outer.bottom =     0
+    outer.top =        0
+    outer.right =      0
+
+# Main keybindings
+[mode.main.binding]
+
+    # Layout
+    alt-slash = 'layout tiles horizontal vertical'
+    alt-comma = 'layout accordion horizontal vertical'
+
+    # Toggle fullscreen
+    alt-f = 'fullscreen'
+
+    # Focus (alt+ctrl+arrows, keeps alt+arrows free for word jumping in text)
+    alt-ctrl-left = 'focus left'
+    alt-ctrl-down = 'focus down'
+    alt-ctrl-up = 'focus up'
+    alt-ctrl-right = 'focus right'
+
+    # Move window
+    alt-ctrl-shift-left = 'move left'
+    alt-ctrl-shift-down = 'move down'
+    alt-ctrl-shift-up = 'move up'
+    alt-ctrl-shift-right = 'move right'
+
+    # Resize
+    alt-minus = 'resize smart -50'
+    alt-equal = 'resize smart +50'
+
+    # Reset all windows to equal sizes
+    alt-0 = 'balance-sizes'
+
+    # Cycle through workspaces on current monitor
+    alt-leftSquareBracket = 'workspace prev'
+    alt-rightSquareBracket = 'workspace next'
+
+    # Switch workspace
+    alt-1 = 'workspace 1'
+    alt-2 = 'workspace 2'
+    alt-3 = 'workspace 3'
+    alt-4 = 'workspace 4'
+    alt-5 = 'workspace 5'
+    alt-6 = 'workspace 6'
+    alt-7 = 'workspace 7'
+    alt-8 = 'workspace 8'
+    alt-9 = 'workspace 9'
+
+    # Move window to workspace
+    alt-shift-1 = 'move-node-to-workspace 1'
+    alt-shift-2 = 'move-node-to-workspace 2'
+    alt-shift-3 = 'move-node-to-workspace 3'
+    alt-shift-4 = 'move-node-to-workspace 4'
+    alt-shift-5 = 'move-node-to-workspace 5'
+    alt-shift-6 = 'move-node-to-workspace 6'
+    alt-shift-7 = 'move-node-to-workspace 7'
+    alt-shift-8 = 'move-node-to-workspace 8'
+    alt-shift-9 = 'move-node-to-workspace 9'
+
+    # Layout scripts (home/work)
+    alt-shift-h = 'exec-and-forget ~/.aerospace-home.sh'
+    alt-shift-w = 'exec-and-forget ~/.aerospace-work.sh'
+    alt-shift-l = 'exec-and-forget ~/.aerospace-laptop.sh'
+
+    # Quick switch between last two workspaces
+    alt-tab = 'workspace-back-and-forth'
+
+    # Move entire workspace to next monitor
+    alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+    # Enter service mode
+    alt-shift-semicolon = 'mode service'
+
+# Service mode (alt+shift+; to enter, then press a key)
+[mode.service.binding]
+    esc = ['reload-config', 'mode main']
+    r = ['flatten-workspace-tree', 'mode main']
+    f = ['layout floating tiling', 'mode main']
+    backspace = ['close-all-windows-but-current', 'mode main']
+    alt-ctrl-shift-left = ['join-with left', 'mode main']
+    alt-ctrl-shift-down = ['join-with down', 'mode main']
+    alt-ctrl-shift-up = ['join-with up', 'mode main']
+    alt-ctrl-shift-right = ['join-with right', 'mode main']
+
+# Apps that always float
+[[on-window-detected]]
+if.app-id = 'com.apple.systempreferences'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.1password.1password'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.calculator'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.ActivityMonitor'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.wispr.wisprflow'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.findmy'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Home'
+run = 'layout floating'
